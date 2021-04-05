@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="ch8.css">
+    <script>
+        /* 實務學習網頁 ch4
+        function help(){
+            alert('注意');
+        } */
+
+        /*實務學習網頁 P.4-10*/
+        function change(){
+            var salary  = document.getElementById('salaryID');
+            var range = document.querySelector('.salaryClass');
+
+            salary.innerText = range.value;
+        }
+        
+    </script>
+</head>
+<body>
+    
+<!-- ch8.52~53 -->
+    <!-- <table>
+        <tr>
+            <th>標題1</th>
+            <th>標題2</th>
+            <th>標題3</th>
+            <th>標題4</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>一</td>
+            <td>二</td>
+            <td>三</td>
+            <td>四</td>
+        </tr>
+    </table> -->
+
+    <!-- ch8.54~58 -->
+    <!-- <form action="ch8.html">
+        <label for="email">信箱：</label>
+        <input type="text" name="mail" id="email" placeholder="信箱">
+
+        <label for="psw">密碼：</label>
+        <input type="text" name="key" id="psw" placeholder="密碼">
+
+        <input type="submit" value="送出">
+    </form> -->
+
+    <!-- ch8.59 -->
+    <!-- <form action="#">
+        <h2>性別</h2>
+        <input type="radio" name="sex" value="boy">男生
+        <input type="radio" name="sex" value="girl">女生
+
+        <h2>興趣</h2>
+        <input type="checkbox" name="hobby" value="movie">電影
+        <input type="checkbox" name="hobby" value="music">音樂
+        <input type="checkbox" name="hobby" value="sport">運動
+
+        <br>
+        <input type="submit" value="送出">
+    </form> -->
+
+    <!-- ch8.60 -->
+    <!-- <form action="#">
+        <select name="birth" id="">
+            <option value="1991">1991</option>
+            <option value="2019">2019</option>
+        </select>
+        <br>
+        <textarea name="content">內容</textarea>
+
+        <input type="submit" value="送出">
+    </form> -->
+
+
+    <!-- 實務學習網頁 ch4 -->
+    <!-- pattern="[0][9][0-9]{8}" -->
+    <!-- <form action="#">
+        帳號：<input type="email" name="acount"><br>
+        密碼：<input type="password" name="key"><br>
+        電話：<input type="tel" name="phone" pattern=""><br>
+
+        <input type="submit" value="送出">
+        <input type="reset" value="重設">
+        <input type="button" value="說明" onclick="help();">
+    </form> -->
+
+    <!-- 實務學習網頁 P.4-10 -->
+    <!-- <form action="#">
+        薪資：<input type="range" value="30000" class="salaryClass" step="1000" max="40000" min="28000" onchange="change();">
+        <span id="salaryID">30000</span>
+    </form> -->
+
+    <!-- 實務學習網頁 P.4-12 -->
+    <!-- <form action="#">
+        <fieldset>
+            <legend>進度</legend>
+            時間：<input type="time"><br>
+            日期：<input type="date"><br>
+            月份：<input type="month"><br>
+            周次：<input type="week">
+        </fieldset>
+    </form> -->
+
+    <!-- 實務學習網頁 P.4-13 -->
+    <form enctype="multipart/form-data" action="Home/Upload" method="post" accept="image/png,image/jepg">
+
+        請選擇檔案：<input type="file"><br>
+
+        <input type="submit" value="檔案上傳">
+    </form>
+</body>
+</html>
